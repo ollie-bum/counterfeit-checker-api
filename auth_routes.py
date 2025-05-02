@@ -101,10 +101,11 @@ async def register(user_data: UserCreate, request: Request, response: Response):
 
 @router.post("/login", response_model=TokenResponse)
 async def login(
-    form_data: OAuth2PasswordRequestForm = Depends(),
     request: Request,
-    response: Response
+    response: Response,
+    form_data: OAuth2PasswordRequestForm = Depends()
 ):
+
     """Login and get access token"""
     ip = request.client.host
     
