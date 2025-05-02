@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+ENV/
+
+# MacOS
+.DS_Store
+
+# VSCode or IDEs
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# Logs and cache
+*.log
+*.sqlite3
+*.db
+.cache/
+*.bak
+
+# Bytecode files
+*.pyo
+*.pyd
+*.pyc
+
+# Render build artifacts (optional)
+render.yaml
